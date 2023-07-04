@@ -1,0 +1,17 @@
+use mec;
+create database mec;
+create table mec.student(
+id int,
+name varchar(20),
+email varchar(20),
+age int
+);
+-- use mec;
+-- show tables;
+select * from mec.student;
+describe mec.student;
+select id,name from mec.student;
+insert into mec.student values (1, "Logi", "mail", 22),
+(1, "Logi", "mail", 22);
+drop database mec;
+truncate table mec.student;
